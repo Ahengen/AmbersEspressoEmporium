@@ -1,0 +1,16 @@
+body{
+    background-image: url("coffee.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: saddlebrown;
+    color: fuchsia;
+}
+fieldset{
+    font-size: large;
+}
+.row{
+    display:flex;
+}
+.column{
+    flex: 50%;
+}

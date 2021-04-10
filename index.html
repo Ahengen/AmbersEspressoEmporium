@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amber's Espresso Emporium</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<h1>Amber's Espresso Emporium</h1>
+<style>
+    body
+    {
+        font-family: Arial; font-weight: bold;
+    }
+</style>
+<body>
+    <form>
+        <fieldset>
+            <div class="row">
+                <div class="column">
+                    <p>Quantity</p>
+                    <label for="velascaQty"></label>
+                    <input type="number" name="machineQty" id="velascaQty" data-price="1099.00" min="0">
+                    <br>
+                    <label for="accademiaQty"></label>
+                    <input type="number" name="machineQty" id="accademiaQty" data-price="1599.00" min="0">
+                </div>
+
+                <div class="column">
+                    <p>Product</p>
+                    <a href="https://www.gaggia.com/automatic-machines/velasca-prestige/">Gaggia Velasca Prestige</a>
+                    <br>
+                    <a href="https://www.gaggia.com/automatic-machines/accademia/">Gaggia Accademia</a>
+                </div>
+
+                <div class="column">
+                    <p>Price</p>
+                    $1,099.00
+                    <br>
+                    $1,599.00
+                </div>
+
+                <div class="column">
+                    <div class="row">
+                        <div class="column" style="text-align: right">
+                            <p>Total:</p>
+                        </div>
+                        <div class="column"></div>
+                    </div>
+                    <div class="row" style="text-align: right">
+                        <div class="column"></div>
+                        <div class="column">
+                            <span id="velascaTotal">$0.00</span>
+                            <br>
+                            <span id="accademiaTotal">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column">
+                    <div class="row" style="text-align: right">
+                        <div class="column">
+                            <p>Grand Total:</p>
+                        </div>
+                        <div class="column">
+                            <p id="grandTotal">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+
+
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="code.js"></script>
+
+</body>
+</html>
+
+
+<!--Create a form. When a number is changed in the text box,
+the item total and grand total should update.
+-->
